@@ -8,7 +8,7 @@ std::vector<int> naive_search(std::string t, std::string p)
 {
     std::vector<int> answ;
     /* Searching */
-    for(int i = 0, j = t.size() - p.size() + 1; i < j; i++)
+    for(int i = 0, j = t.size() - p.size(); i < j; i++)
     {
         bool flag = true;
         for(int m = 0, g = i, k = i + p.size(); g < k; g++, m++)

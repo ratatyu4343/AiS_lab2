@@ -12,7 +12,7 @@ int main()
 {
     //naive algorithm
     std::string tb = rand_str(500);
-    std::string pb = "111000";
+    std::string pb = rand_str(5);
     std::vector<int> vb = naive_search(tb, pb);
 
     std::string t = "\nNaive pattern searching is the simplest method"
@@ -32,7 +32,7 @@ int main()
     print(t, p, v);
 
     //boyer algorithm
-    pb = "111000";
+    pb = "1101100";
     vb = boyer_search(tb, pb);
 
     p = "pattern";
@@ -45,7 +45,7 @@ int main()
     print(t, p, v);
 
     //kmp algorithm
-    pb = "111000";
+    pb = "001101";
     vb = kmp_search(tb, pb);
 
     p = "Naive";
